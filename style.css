@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/eating.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2% 6%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    text-align: left;
+}
+
+nav a img{
+    width: 10%;
+}
+
+.nav-link{
+    flex: 1;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+}
+
+.nav-links ul li::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+}
+
+.hero-btn{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    border: 1px solid white;
+    font-size: 13px;
+    position: relative;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: #f44336;
+    transition: 0.5s;
+}
+
+.service{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.service h3{
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.service-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    display: flex;
+}
+
+.service-col p{
+    color: black;
+    font-size: 20px;
+    padding-top: 100px;
+    font-weight: 400;
+}
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/yt.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.call{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/hia.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    width: 80%;
+    align-items: center;
+    margin-left: 120px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.call-1{
+    display: flex;
+    margin-left: 40px;
+    padding-top: 80px;
+}
+
+.call-1 h1{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.call-1 h2{
+    margin-left: 20px;
+    color: #fff;
+}
+
+.call-2{
+    display: flex;
+    margin-left: 40px;
+    padding-top: 80px;
+}
+
+.call-2 h1{
+    color: #fff;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.call-2 h2{
+   margin-left: 20px;
+   color: #fff;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: red;
+    height: 20vh;
+}
+
+.footer a{
+    color: #fff;
+    padding: 100px 20px;   
+}
+
+.footer a img{
+    padding-top: 40px;
+}
+
+
+
