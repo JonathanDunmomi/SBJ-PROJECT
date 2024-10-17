@@ -261,6 +261,44 @@ nav a img{
    color: #fff;
 }
 
+@media(max-width: 700px){
+  .call-2{
+    text-align: center;
+  }
+}
+
+/* .tat{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.tat:hover{
+    background: rgba(226,0,0,0.7);
+}
+
+.tat h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.tat:hover h3{
+    bottom: 49%;
+    opacity: 1;
+} */
+
 .footer{
     text-align: center;
     margin-top: 20px;

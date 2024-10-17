@@ -140,6 +140,30 @@ nav a img{
     }
 }
 
+.hero{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(image/eating.jpg);
+    margin-top: 20px;
+}
+
+.heroene{
+    display: flex;
+}
+
+.heroene1 img{
+    width: 350px;
+    margin: 40px 0px;
+}
+
+.heroene2 p{
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+}
+
 .footer{
     text-align: center;
     margin-top: 20px;

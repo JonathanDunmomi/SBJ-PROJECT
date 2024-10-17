@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url('image/spagetti.jpg');;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 2% 6%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav a{
+    text-align: left;
+}
+
+nav a img{
+    width: 10%;
+}
+
+.nav-link{
+    flex: 1;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 15px;
+}
+
+.nav-links ul li a{
+    color: #fff;
+}
+
+.nav-links ul li::after{ 
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.hero-btn{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 34px;
+    border: 1px solid white;
+    font-size: 13px;
+    position: relative;
+    background: black;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.nav-links .fa-solid{
+    display: none;
+}
+
+.nav .fa-solid{
+    display: none;
+}
+
+@media(max-width: 700px){
+    .nav-links{
+        position: absolute;
+        background: rgb(150, 147, 147);
+        height: 40vh;
+        width: 200px;
+        top: 5px;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    .nav-links ul li{
+        display: block;
+        font-size: 10px;
+    }
+
+    .nav-links .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav .fa-solid{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background-color: red;
+    transition: 0.5s;
+}
+
+.reach{
+    display: flex;
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.reach1 img{
+    width: 350px;
+}
+
+.reach h3{
+    color: #f4f;
+    font-size: 50px;
+    margin-top: 120px;
+}
+
+.reach p{
+    color: #fff;
+    font-style: italic;
+    font-size: 30px;
+}
+
+@media(max-width: 700px){
+    .reach{
+        display: block;
+    }
+
+    .reach img{
+        width: 200px;
+    }
+}
+
+.order{
+    text-align: center;
+}
+
+.order1{
+   margin: 20px 20px;
+}
+
+.order1 h1{
+    font-style: italic;
+}
+
+.order2-1{
+    margin: 30px;
+}
+
+
+
+.footer{
+    text-align: center;
+    margin-top: 20px;
+    background-color: red;
+    height: 20vh;
+}
+
+.footer a{
+    color: #fff;
+    padding: 100px 20px;   
+}
+
+.footer a img{
+    padding-top: 40px;
+}
