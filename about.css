@@ -7,7 +7,6 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(image/Franch.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +32,7 @@ nav a img{
    width: 10%;
 }
 
-.nav-link{
+.nav-links{
     flex: 1;
 }
 
@@ -73,6 +72,10 @@ nav a img{
 }
 
 @media(max-width: 700px){
+    body{
+        overflow-x: hidden;
+     }
+     
     .nav-links{
         position: absolute;
         background: rgb(150, 147, 147);
@@ -107,6 +110,50 @@ nav a img{
     }
 }
 
+
+:root {
+    --background-light: #ffffff;
+    --text-light: #000000;
+    --background-dark: #121212;
+    --text-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 0px;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 300px;
+}
+
+.toggle-button:hover {
+    background-color: blue;
+}
+
 .text-box{
     width: 50%;
     line-height: 20px;
@@ -138,6 +185,10 @@ nav a img{
     .text-box h1{
         font-size: 20px;
     }
+
+    .text-box p{
+        font-size: 10px;
+    }
 }
 
 .hero{
@@ -145,7 +196,7 @@ nav a img{
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(image/eating.jpg);
+    /* background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)), url(image/eating.jpg); */
     margin-top: 20px;
 }
 
@@ -162,6 +213,16 @@ nav a img{
     font-style: italic;
     font-size: 20px;
     color: #fff;
+}
+
+@media(max-width: 700px){
+    .heroene1 img{
+        width: 150px;
+    }
+
+    .heroene2 p{
+        font-size: 10px;
+    }
 }
 
 .footer{

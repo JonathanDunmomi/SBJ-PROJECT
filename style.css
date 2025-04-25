@@ -7,7 +7,7 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/eating.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(image/eating.jpg) ;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -73,10 +73,14 @@ nav a img{
 }
 
 @media(max-width: 700px){
+      body{
+         overflow-x: hidden;
+      }
+
     .nav-links{
         position: absolute;
         background: rgb(150, 147, 147);
-        height: 40vh;
+        height: 50vh;
         width: 200px;
         top: 5px;
         right: -200px;
@@ -262,8 +266,18 @@ nav a img{
 }
 
 @media(max-width: 700px){
+
+    .call{
+     align-items: center;
+     margin-left: 50px;
+    }
+
   .call-2{
     text-align: center;
+  }
+
+  .call-2 h2{
+    font-size: 20px;
   }
 }
 
@@ -314,6 +328,50 @@ nav a img{
 .footer a img{
     padding-top: 40px;
 }
+
+:root {
+    --background-light: #ffffff;
+    --text-light: #000000;
+    --background-dark: #121212;
+    --text-dark: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-light);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+}
+
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 0px;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 300px;
+}
+
+.toggle-button:hover {
+    background-color: blue;
+}
+
 
 
 

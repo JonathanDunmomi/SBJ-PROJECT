@@ -23,14 +23,18 @@
         <nav>
             <a href="index.html"><img src="image/logo.jpeg"></a>
 
-            <div class="nav-links" id="navLinks">
+            <div class="nav-links">
                 <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="order.html">Order</a></li>
+                <ul class="items">
+                    <li class="item"><a href="index.html">Home</a></li>
+                    <li class="item"><a href="about.html">About</a></li>
+                    <li class="item"><a href="contact.html">Contact</a></li>
+                    <li class="item"><a href="order.html">Order</a></li>
                 </ul>
+
+                <div class="toggle-container">
+                    <button class="toggle-button" id="modeToggle">Dark</button>
+                </div>
             </div>
 
             <div class="nav">
@@ -39,10 +43,10 @@
         </nav>
 
         <div class="text-box">
-            <h1>About Us</h1>
+            <h1 id="heading">About Us</h1>
                 
                 <p>
-                    Cooking and Food Preparation: This involves the actual cooking and preparation of food items on the restaurant's menu.     It includes tasks like chopping ingredients, grilling, frying, baking, and plating dishes.
+                    Cooking and Food Preparation: This involves the actual cooking and preparation of food items on the restaurant's menu. It includes tasks like chopping ingredients, grilling, frying, baking, and plating dishes.
                     Food Presentation: Ensuring that dishes are visually appealing and served attractively to guests.
                     Table Service: Waitstaff or servers are responsible for taking orders, serving food and beverages, and providing a pleasant dining experience to guests.
                     Customer Service:

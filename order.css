@@ -91,6 +91,10 @@ nav a img{
 }
 
 @media(max-width: 700px){
+    body{
+        overflow-x: hidden;
+     }
+     
     .nav-links{
         position: absolute;
         background: rgb(150, 147, 147);
@@ -141,7 +145,7 @@ nav a img{
     width: 350px;
 }
 
-.reach h3{
+.reach2 h3{
     color: #f4f;
     font-size: 50px;
     margin-top: 120px;
@@ -160,6 +164,11 @@ nav a img{
 
     .reach img{
         width: 200px;
+    }
+
+    .reach2 h3{
+        margin-left: 0px;
+        font-size: 35px;
     }
 }
 
